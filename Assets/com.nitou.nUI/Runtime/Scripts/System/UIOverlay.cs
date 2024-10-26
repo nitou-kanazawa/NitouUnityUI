@@ -74,7 +74,7 @@ namespace nitou.UI {
             // 
             var childRect = new GameObject("Container").AddComponent<RectTransform>();
             childRect.SetParent(canvas.transform, false);
-            childRect.SetSizeBasedOnEdges(0, 0, 0, 0);
+            childRect.SetRectBasedOnParentEdiges(0, 0, 0, 0);
 
             // Container
             _container = childRect.AddComponent<OverlayContainer>();

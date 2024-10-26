@@ -48,7 +48,7 @@ namespace nitou.UI {
 
             // ※デフォルトでは親と同じサイズにしておく
             rect.transform.SetParent(parent, false);
-            rect.SetSizeBasedOnEdges(0, 0, 0, 0);
+            rect.SetRectBasedOnParentEdiges(0, 0, 0, 0);
 
             return rect;
         }
